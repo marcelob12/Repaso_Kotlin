@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/marce/Documents/Repo Kotlin/Repaso_Kotlin/Navigation/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Users/marce/Documents/Repo Kotlin/Repaso_Kotlin/Navigation/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/marce/Documents/Repo Kotlin/Repaso_Kotlin/Navigation/app/src/main/res/layout/fragment_last_name.xml" value="0.259375" />
+        <entry key="..\:/Users/marce/Documents/Repo Kotlin/Repaso_Kotlin/Navigation/app/src/main/res/layout/fragment_name.xml" value="0.33" />
+        <entry key="..\:/Users/marce/Documents/Repo Kotlin/Repaso_Kotlin/Navigation/app/src/main/res/layout/fragment_result.xml" value="0.259375" />
         <entry key="..\:/Users/marce/Documents/Repo Kotlin/Repaso_Kotlin/app/src/main/res/layout/activity_main.xml" value="0.259375" />
       </map>
     </option>
