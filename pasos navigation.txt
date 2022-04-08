@@ -1,0 +1,30 @@
+1. importar todas las independencias y clases etc, sync
+2. en carpeta res... -> new android resouce file -> nav_graph -> type Navigation
+3. crear fragmentos en  com.equipo.... (los que sean necesarios)
+	-new -> Fragment -> fragment blank
+
+4. navigation ->nav_graph -> obtenemos los fragmentos creados.
+
+5.unir los fragments (se crea una action para poder movernos entre los diferentes freagmentos)
+6. en activity_main establecer un nav host
+	<androidx.fragment.app.fragmentContainerView....
+	ponerle un Id 
+	android:name="android.navigation.fragment.NavhostFragment"
+	app:defaultNavHost="true"
+	app:NavGraph= "@navigation/nav_graph"
+
+7.activar el databiding con layout ne el activity_main
+
+8. en mainactivity
+private lateinit var : ActivityMainBinding
+
+
+-- aca se programa el cambio a la hora de  presionar el boton
+9.en oncreate() binding = DataBidingUtil.setContentView(this,R.layout.activity_main)
+	val navhost = supportFragmentManager.findFragmentByID(R.id.nav_host_fragment) as NavHostFragment
+ val navcontroller = navHostFragment.navcontroller
+	binding.actionchange.setonclick....(){
+			navcontroller.navigate(action)	
+	}
+
+10.
