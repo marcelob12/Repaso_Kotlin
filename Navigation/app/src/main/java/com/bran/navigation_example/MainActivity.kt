@@ -23,7 +23,12 @@ class MainActivity : AppCompatActivity() {
         binding.actionChange.setOnClickListener {
             //con esto llamamos la accion en el boton para que se mueva de un fragmento (1) al (2)
             //pero al presionar el boton se sobre pone la misma ventana las veces que se preciona el boton
-            navController.navigate(R.id.lastNameFragment)
+            // navController.navigate(R.id.lastNameFragment)
+
+            //mandar de manera segura datos
+            // del fragmento en el que estamos . al que queremos ir
+            val action = NameFragmentDirections.actionNameFragmentToLastNameFragment("marcelo")
+            navController.navigate(action)
 
         }
     }
