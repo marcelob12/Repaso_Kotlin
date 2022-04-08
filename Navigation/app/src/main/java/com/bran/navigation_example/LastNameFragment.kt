@@ -13,21 +13,21 @@ class LastNameFragment : Fragment() {
 
     //obteniendo las variables de cualquier lado
     private val args: LastNameFragmentArgs by navArgs()
-    private lateinit var biding: FragmentLastNameBinding
+    private lateinit var binding: FragmentLastNameBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        biding = DataBindingUtil.inflate(inflater,R.layout.fragment_last_name, container, false)
-        return biding.root
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_last_name, container, false)
+        return binding.root
         //recibir argumentos
         args.name
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding
+        binding.lastNameText.text = args.name
     }
 
 }
